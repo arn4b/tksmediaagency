@@ -15,9 +15,11 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
+          <div style={{display: "flex"}}>
+          <img className="tkslogo" src="img/logo.jpg" />
           <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
-          </a>{' '}
+            TKS MEDIA AGENCY
+          </a></div>{' '}
         </div>
 
         <div
@@ -38,11 +40,6 @@ export const Navigation = (props) => {
             <li>
               <a href='#services' className='page-scroll'>
                 Services
-              </a>
-            </li>
-            <li>
-              <a href='#portfolio' className='page-scroll'>
-                Gallery
               </a>
             </li>
             <li>

@@ -7,6 +7,29 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	/* Track */
+::-webkit-scrollbar-track {
+		background: #f1f1f1;
+
+	}
+	
+	/* Handle */
+::-webkit-scrollbar-thumb {
+		background: #af0202;
+		border-radius: 10px;
+	}
+	
+	/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+		background: #af0202;
+	}
+
 h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
@@ -33,7 +56,7 @@ h5 {
 	line-height: 20px;
 }
 p {
-	font-size: 15px;
+	font-size: 18px;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -69,6 +92,11 @@ hr {
 	padding: 15px;
 	transition: all 0.8s;
 }
+
+#menu .tkslogo {
+	width: 5rem;
+	margin: 0 10px;
+}
 #menu.navbar-default {
 	background-color: #fff;
 	border-color: rgba(231, 231, 231, 0);
@@ -98,7 +126,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #af0202 0%, #f05b5b 100%);
 	content: "";
 	transition: width 0.2s;
 }
@@ -115,7 +143,7 @@ hr {
 	bottom: -1px !important;
 	width: 100% !important;
 	height: 2px !important;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+	background: linear-gradient(to right,  #af0202 0%, #f05b5b 100%) !important;
 	content: "" !important;
 	transition: width 0.2s !important;
 }
@@ -124,10 +152,10 @@ hr {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #fff;
-	border-color: #608dfd;
+	border-color: #af0202;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #608dfd;
+	background-color: #f05b5b;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -141,7 +169,7 @@ hr {
 .section-title h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background: linear-gradient(to right,  #af0202 0%, #f05b5b 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -155,8 +183,9 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background-color: #f05b5b;
+	background-image: linear-gradient(to right, #af0202 0%, #f05b5b 100%);
+
 	padding: 14px 34px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -169,7 +198,7 @@ hr {
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
-	background-color: #6372ff;
+	background-color: #f05b5b;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -185,29 +214,36 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro {
 	display: table;
 	width: 100%;
+	height: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
-	background-color: #e5e5e5;
+	background: url(../img/DXKg.gif) center center no-repeat;
+	background-color: rgba(#e5e5e5, 0.9);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.2);
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
-	color: #fff;
+	color: rgb(248, 247, 247);
 	font-size: 82px;
-	font-weight: 700;
+	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 10px;
 }
 .intro h1 span {
 	font-weight: 800;
-	color: #5ca9fb;
+	color: #f05b5b;
 }
 .intro p {
 	color: #fff;
@@ -220,12 +256,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 header .intro-text {
 	padding-top: 350px;
 	padding-bottom: 200px;
-	text-align: center;
+	text-align: auto;
 }
 /* Features Section */
 #features {
 	padding: 100px 0;
-	background: #f6f6f6;
+	background: linear-gradient(to right,  #af0202 0%, #f05b5b 100%);
+
 }
 #features i.fa {
 	font-size: 38px;
@@ -236,8 +273,24 @@ header .intro-text {
 	height: 100px;
 	padding: 30px 0;
 	border-radius: 50%;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #d3c509 0%, #edf05b 100%);
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+}
+#features p {
+	color: rgb(255, 255, 255);
+}
+#features  h2 ,h3 {
+	color: rgb(255, 255, 255);
+}
+#features .section-title h2::after {
+	position: absolute;
+	content: "";
+	background: rgba(255,255,255,.3);
+	height: 4px;
+	width: 60px;
+	bottom: 0;
+	margin-left: -30px;
+	left: 50%;
 }
 /* About Section */
 #about {
@@ -255,7 +308,7 @@ header .intro-text {
 #about h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background: linear-gradient(to right, #af0202 0%, #f05b5b 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -270,7 +323,7 @@ header .intro-text {
 #about .about-text li:before {
 	content: '\f00c';
 	font-family: 'FontAwesome';
-	color: #5ca9fb;
+	color: #f05b5b;
 	font-size: 11px;
 	font-weight: 300;
 	padding-right: 8px;
@@ -280,6 +333,7 @@ header .intro-text {
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
+	border-radius: 15px;
 	box-shadow: 0 0 50px rgba(0,0,0,0.06);
 }
 #about p {
@@ -289,7 +343,7 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 100px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #af0202 0%, #f05b5b 100%);
 	color: #fff;
 }
 #services .service-desc {
@@ -313,9 +367,9 @@ header .intro-text {
 	width: 120px;
 	height: 120px;
 	padding: 40px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #d3c509 0%, #edf05b 100%);
 	border-radius: 50%;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
 #services h3 {
@@ -324,7 +378,7 @@ header .intro-text {
 	color: #fff;
 }
 #services p {
-	color: rgba(255,255,255,.75);
+	color: rgb(255, 255, 255);
 }
 #services .service-desc {
 	margin-bottom: 40px;
@@ -416,6 +470,8 @@ header .intro-text {
 /* Team Section */
 #team {
 	padding: 100px 0;
+	display: flex;
+	justify-content: center;
 }
 #team h4 {
 	margin: 5px 0;
@@ -434,7 +490,7 @@ header .intro-text {
 /* Contact Section */
 #contact {
 	padding: 100px 0 60px 0;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right,  #af0202 0%, #f05b5b 100%);
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
@@ -490,7 +546,8 @@ label {
 #contact .form-control {
 	display: block;
 	width: 100%;
-	padding: 6px 12px;
+	height: 5%;
+	padding: 20px 12px;
 	font-size: 16px;
 	line-height: 1.42857143;
 	color: #444;
@@ -503,7 +560,13 @@ label {
 	-webkit-transition: none;
 	-o-transition: none;
 	transition: none;
+	border-radius: 6px;
 }
+
+#contact .msg {
+	height: 15% !important;
+}
+
 #contact .form-control:focus {
 	border-color: #999;
 	outline: 0;
@@ -556,21 +619,6 @@ color: #777;
 #contact .social i.fa:hover {
 	color: #608dfd;
 	background: #fff;
-}
-/* Footer Section*/
-#footer {
-	background: #f6f6f6;
-	padding: 30px 0;
-}
-#footer p {
-	color: #888;
-	font-size: 14px;
-}
-#footer a {
-	color: #608dfd;
-}
-#footer a:hover {
-	border-bottom: 2px solid #608dfd;
 }
 
 @media (max-width: 768px) {
