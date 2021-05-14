@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/tksmediaagency/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/tksmediaagency/static/js/main.93f493ba.chunk.js",
+    "main.js.map": "/tksmediaagency/static/js/main.93f493ba.chunk.js.map",
+    "runtime-main.js": "/tksmediaagency/static/js/runtime-main.31476666.js",
+    "runtime-main.js.map": "/tksmediaagency/static/js/runtime-main.31476666.js.map",
+    "static/js/2.8d9a4471.chunk.js": "/tksmediaagency/static/js/2.8d9a4471.chunk.js",
+    "static/js/2.8d9a4471.chunk.js.map": "/tksmediaagency/static/js/2.8d9a4471.chunk.js.map",
+    "index.html": "/tksmediaagency/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "/tksmediaagency/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.8d9a4471.chunk.js.LICENSE.txt": "/tksmediaagency/static/js/2.8d9a4471.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.31476666.js",
+    "static/js/2.8d9a4471.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.93f493ba.chunk.js"
+  ]
+}
